@@ -1,0 +1,1 @@
+# class-simple-assets
