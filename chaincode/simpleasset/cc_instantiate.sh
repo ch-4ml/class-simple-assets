@@ -3,7 +3,7 @@
 # 설치
 docker exec cli peer chaincode install -n simpleasset -v 1.0 -p github.com/simpleasset/v1.0
 # 배포 init "a" "100"
-docker exec cli peer chaincode instantiate -n simpleasset -v 1.0 -c '{"Args":["a","100"]}' -C mychannel -P 'AND ("Org1MSP.member")'
+docker exec cli peer chaincode instantiate -n simpleasset -v 1.0 -c '{"Args":["a","100"]}' -C mychannel -P 'AND("Org1MSP.member")'
 sleep 3
 
 # 테스트 query - get "a"
